@@ -7,8 +7,7 @@ body{
 }
 #app{
     width: fit-content;
-    padding: 5%;
-    padding-bottom: 0;
+    padding: 3%;
     background-color: rgb(1, 1, 60);
     border: 5px solid white;
     border-radius: 10%;
@@ -117,10 +116,13 @@ body{
     border-width: 3px;
 }
 #output{
-    height: 20vh;
+    height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+#directions{
+    color: yellow;
 }
 #output button{
     height: fit-content;

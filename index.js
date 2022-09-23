@@ -60,4 +60,5 @@ function generate(){
     but2.addEventListener("click",()=>{navigator.clipboard.writeText(pass2);})
     out.appendChild(but1);
     out.appendChild(but2);
+    document.getElementById("directions").classList.remove("invisible")
 }
