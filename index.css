@@ -14,7 +14,7 @@ body{
 }
 #heading{
     text-align: left;
-    height: 25vh;
+    height: 130px;
     margin: auto;
 }
 .white{
@@ -97,7 +97,7 @@ body{
 }
 
 #gp-holder{
-    height: 20vh;
+    height: 130px;
     border-bottom: 1px solid grey;
     display: flex;
     align-items: center;
@@ -116,7 +116,7 @@ body{
     border-width: 3px;
 }
 #output{
-    height: 10vh;
+    height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -130,7 +130,7 @@ body{
     background-color: gray;
     border: 1px solid white;
     border-radius: 5px;
-    width: 26vh;
+    width: 140px;
 }
 #output button:hover{
     border-width: 2px;
