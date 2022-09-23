@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Password Generator</title>
+        <link rel="icon" href="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cG5nJTIwbG9nb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" />
+        <link rel="stylesheet" href="index.css" />
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div id="heading">
+                <h1 class="white no-margin">Generate a</h1>
+                <h1 class="green margin-top-bottom">Random Password</h1>
+                <p class="white no-margin">Never use an insecure password again!</p>
+            </div>
+            <div id="switches-holder">
+                <label class="switch white">
+                    <div class="switch-text">
+                        <p class="no-margin">Use Symbols: </p>
+                    </div>
+                    <div id="symbols" class="toggle" onclick="toggleSymbols()">
+                        <div class="inner-toggle"></div>
+                    </div>
+                </label>
+                <label class="switch white">
+                    <div class="switch-text">
+                        <p class="no-margin">Use Numbers: </p>
+                    </div>
+                    <div id="numbers" class="toggle" onclick="toggleNumbers()">
+                        <div class="inner-toggle"></div>
+                    </div>
+                </label>
+            </div>
+            <div id="slider-holder">
+                <p class="white inline">Password Length: </p>
+                <p id="slider-value" class="white no-margin inline">14</p>
+                <input id="slider" class="slider" type="range" min="8" max="20" value="14" onchange="adjustlen()" onpointermove="adjustlen()">
+            </div>
+            <div id="gp-holder">
+                <button id="gp" onclick="generate()">Generate Passwords</button>
+            </div>
+            <div id="output"></div>
+        </div>
+    </body>
+</html>
